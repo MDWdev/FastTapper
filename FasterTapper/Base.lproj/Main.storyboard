@@ -31,12 +31,6 @@
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="NzW-bO-vWI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R2-3T-6au">
-                                <rect key="frame" x="126" y="59" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlp-5r-UAS">
                                 <rect key="frame" x="108" y="469" width="104" height="21"/>
                                 <constraints>
@@ -46,15 +40,21 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R2-3T-6au">
+                                <rect key="frame" x="122" y="59" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Rlp-5r-UAS" secondAttribute="trailing" constant="108" id="8YE-H4-8yV"/>
-                            <constraint firstAttribute="trailing" secondItem="4R2-3T-6au" secondAttribute="trailing" constant="126" id="VVT-yu-zT7"/>
+                            <constraint firstAttribute="trailing" secondItem="4R2-3T-6au" secondAttribute="trailing" constant="122" id="VVT-yu-zT7"/>
                             <constraint firstItem="qRj-PT-Soc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctg-1M-xtW"/>
                             <constraint firstItem="Rlp-5r-UAS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="108" id="igF-fB-jn1"/>
                             <constraint firstItem="4R2-3T-6au" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="jAW-wE-1os"/>
-                            <constraint firstItem="4R2-3T-6au" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="126" id="rTn-kP-9au"/>
+                            <constraint firstItem="4R2-3T-6au" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="122" id="rTn-kP-9au"/>
                             <constraint firstItem="qRj-PT-Soc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tem-9l-HbP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rlp-5r-UAS" secondAttribute="bottom" constant="78" id="vFe-Wf-7wM"/>
                         </constraints>
