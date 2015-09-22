@@ -37,15 +37,29 @@ class ViewController: UIViewController {
         
         if(seconds == 0) {
             timer.invalidate()
-            let alert = UIAlertController(title: "Time is up!",
-                message: "You scored \(count) points",
-                preferredStyle: UIAlertControllerStyle.Alert)
+            if count >= 100 {
+                let alert = UIAlertController(title: "You Won!",
+                    message: "You scored \(count) points",
+                    preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Play Again",
+                    style :UIAlertActionStyle.Default,
+                    handler: { action in self.setupGame()
+                }))
+                presentViewController(alert, animated: true, completion:nil)
+            } else {
+                let alert = UIAlertController(title: "You Lost!",
+                    message: "You scored \(count) points",
+                    preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Play Again",
+                    style :UIAlertActionStyle.Default,
+                    handler: { action in self.setupGame()
+                }))
+                presentViewController(alert, animated: true, completion:nil)
+                
+            }
             
-            alert.addAction(UIAlertAction(title: "Play Again",
-                style :UIAlertActionStyle.Default,
-                handler: { action in self.setupGame()
-            }))
-            presentViewController(alert, animated: true, completion:nil)
+            
+            
         }
     }
     
